@@ -40,7 +40,7 @@ def savings(gross_pay, tax_rate, expenses):
     tax = gross_pay - (gross_pay * tax_rate)
     remaining = math.floor(tax) - expenses
 
-    return(remaining)
+    return(int(remaining))
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
     '''Material Waste.
@@ -119,7 +119,7 @@ def interest(principal, rate, periods):
 
     interest = principal * (rate * periods)
     final = principal + interest
-    return(final)
+    return(int(final))
 
 def body_mass_index(weight, height):
     '''Body Mass Index.
@@ -161,4 +161,4 @@ def body_mass_index(weight, height):
     meters = inches / 39.37
     kg = lbs / 2.2
     bmi = kg / (meters ** 2)
-    return(bmi)
+    return(float(bmi))
